@@ -106,11 +106,11 @@ app.get("/auth/google",
   passport.authenticate("google", { scope: ["profile"] }));
 
 
-  app.get("https://daily-journal-web.herokuapp.com/auth/google/home",
-    passport.authenticate('google', { failureRedirect: "/login" }),
+  app.get("/auth/google/home",
+    passport.authenticate("google", { failureRedirect: "/login" }),
     function(req, res) {
       // Successful authentication, redirect home.
-      res.redirect('/home');
+      res.redirect("/home");
     });
 
 
