@@ -81,7 +81,7 @@ passport.use(new GoogleStrategy({
     clientSecret: process.env.CLIENT_SECRET,
     callbackURL: "https://daily-journal-web.herokuapp.com/auth/google/home",
       // callbackURL: "http://localhost:3000/auth/google/home",
-    userProfileURL:"https://www.googleapis.com/oauth2/v3/userinfo"
+    userProfileURL:"http://www.googleapis.com/oauth2/v3/userinfo"
       },
   function(accessToken, refreshToken, profile, cb) {
     console.log(profile);
