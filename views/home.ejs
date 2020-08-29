@@ -1,0 +1,135 @@
+    <!DOCTYPE html>
+    <html lang="en" dir="ltr">
+
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Daily Journal</title>
+          <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Chicle&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Modern+Antiqua&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="/css/cover.css">
+          <link rel="icon" href="/images/favicon.ico">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    </head>
+
+    <body>
+      <div class="trials-abt">
+        <!-- ......................................Navigation.......................................... -->
+        <nav class="nav">
+          <div class="nav-menu flex-row">
+            <div class="nav-brand">
+              <a href="#" class="text-gray">DAILY JOURNAL</a>
+            </div>
+            <div class="toggle-collapse">
+              <div class="toggle-icons">
+                <img src="/images/Nav.svg" class="image" alt="">
+              </div>
+            </div>
+
+            <div>
+              <ul class="nav-items">
+                <li class="nav-link">
+                  <a href="/">HOME</a>
+                </li>
+                <li class="nav-link">
+                  <a href="/compose">COMPOSE</a>
+                </li>
+                <li class="nav-link">
+                  <a href="/about">ABOUT</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!-- .................x.....................Navigation.......................x................... -->
+
+        <!-- ...................................Main Section .............................................. -->
+        <main>
+          <section class="site-title">
+            <div class="site-background">
+
+              <h1>|| WELCOME ||</h1>
+              <form action="/compose" method="get">
+                <button class="btn" type="submit">Compose</button>
+              </form>
+            </div>
+          </section>
+      </div>
+
+      <div class="blogpost">
+        <div class="post">
+          <div class="site-content">
+            <div>
+              <h1>Home</h1>
+
+              <p class="post-content"> <%= startingContent %> </p>
+              <br><br>
+
+            </div>
+            <div class="image-content">
+              <img src="/images/blog.svg" alt="">
+            </div>
+          </div>
+
+          <div class="home-new-post">
+
+            <%  posts.forEach(function(user){ %>
+
+
+            <%  user.messages.forEach(function(messages){ %>
+
+
+            <h1><%=messages.title%></h1>
+
+            <p>
+              <%=messages.content%>
+              <!-- <a class="home-read" href="/users/messages/<%=messages._id%>">Read More</a> -->
+
+            </p>
+            <hr>
+
+
+
+
+
+            <% }); %>
+            <% }); %>
+
+
+
+          </div>
+
+
+        </div>
+
+
+      </div></main>
+      <footer class="footer">
+        <div class="container">
+        <div class="copyright">
+          <h4>© Copyright Souvik 2020</h4>
+        </div>
+        </div>
+      </footer>
+
+
+
+
+
+      <script type="text/javascript">
+        $('.toggle-icons').click(function() {
+          $(".nav").toggleClass("collapse");
+          $(".trials-abt").toggleClass("trials-abtsp");
+        });
+      </script>
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
