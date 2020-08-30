@@ -309,7 +309,7 @@ hr{
 }
 
 
-.footer{
+.footer-home{
   height: 100%;
   position: relative;
   background: black;
@@ -318,12 +318,12 @@ hr{
   width: 100%;
 }
 
-footer.footer .container{
+footer.footer-home .container{
   display:grid;
   grid-template-columns: 100%;
 }
 
-.footer .container .copyright h4{
+.footer-home .container .copyright h4{
   color: white;
 }
 
