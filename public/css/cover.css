@@ -327,6 +327,15 @@ footer.footer .container{
   color: white;
 }
 
+footer.footer-home .container{
+  display:grid;
+  grid-template-columns: 100%;
+}
+
+.footer-home .container .copyright h4{
+  color: white;
+}
+
 /* ............................Main..................................... */
 
 @media (max-width:850px) {
@@ -464,10 +473,11 @@ main .site-title .site-background{
 .home-new-post h1{
   margin-top: 0;
 }
-.footer{
+.footer-home{
   position: fixed;
   bottom: 0;
   left:0;
+  height: 50px
 }
 
 }
