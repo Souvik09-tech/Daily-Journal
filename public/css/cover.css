@@ -464,5 +464,10 @@ main .site-title .site-background{
 .home-new-post h1{
   margin-top: 0;
 }
+.footer{
+  position: fixed;
+  bottom: 0;
+  left:0;
+}
 
 }
