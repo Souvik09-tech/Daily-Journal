@@ -309,7 +309,7 @@ hr{
 }
 
 
-.footer-home{
+.footer{
   height: 100%;
   position: relative;
   background: black;
@@ -318,15 +318,22 @@ hr{
   width: 100%;
 }
 
-footer.footer-home .container{
+footer.footer .container{
   display:grid;
   grid-template-columns: 100%;
 }
 
-.footer-home .container .copyright h4{
+.footer .container .copyright h4{
   color: white;
 }
-
+.footer-home{
+  height: 100%;
+  position: relative;
+  background: black;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+}
 footer.footer-home .container{
   display:grid;
   grid-template-columns: 100%;
