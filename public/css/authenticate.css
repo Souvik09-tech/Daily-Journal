@@ -121,7 +121,7 @@ form.sign-in-form {
   justify-content: center;
   align-items: center;
   margin: 0 0.45rem;
-  color: #444;
+  color: #fff;
   border-radius: 50%;
   border: 1px solid #333;
   text-decoration: none;
@@ -130,7 +130,7 @@ form.sign-in-form {
 }
 
 .social-icon:hover {
-  color: #1abc9c;
+  color: #000;
   border-color: #000;
 }
 
