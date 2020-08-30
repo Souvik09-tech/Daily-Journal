@@ -52,8 +52,10 @@
         <main>
           <section class="site-title">
             <div class="site-background">
+              <%  posts.forEach(function(user){ %>
 
-              <h1>|| WELCOME ||</h1>
+              <h1>|| WELCOME <%= user.name %> </h1>
+                <% }); %>
               <form action="/compose" method="get">
                 <button class="btn" type="submit">Compose</button>
               </form>

@@ -53,6 +53,7 @@ const userSchema = new mongoose.Schema({
   messages: [messageSchema],
   email: String,
   password: String,
+  name: String,
   googleId: String
 });
 
@@ -119,9 +120,10 @@ app.get("/auth/google",
 app.get("/home",function(req,res){
   User.find({_id: req.user.id}, function(err, foundUsers){
     if(err){
-      console.log(err);
+      console.log(req.user.name);
     }else{
       if(foundUsers){
+        
         res.render("home",{startingContent: homeStartingContent, posts: foundUsers});
       }
     }
@@ -219,6 +221,7 @@ app.post("/register",function(req,res){
       res.redirect("/register");
     }else{
       passport.authenticate("local")(req,res,function(){
+        console.log(req.body.name);
         res.redirect("/home");
       });
     }

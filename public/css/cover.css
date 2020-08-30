@@ -225,6 +225,9 @@ main .site-title .btn:hover{
 .post-content{
   padding-right: 10%;
 }
+.post-content h1{
+  padding-bottom: 20px;
+}
 
 .image-content img{
   padding-left: 60px;
@@ -277,21 +280,49 @@ hr{
   border: 0.8px solid #666;
 }
 .social-contact{
-  padding-top: 30px;
+  padding-top: auto;
+  display:grid;
+  grid-template-columns: 15% 15% 15% 15% 40%;
 }
 
-.social-contact .social-icon-contact i{
+.social-contact .social-icon-contact1 i{
   height: 46px;
   width: 46px;
-  display: flex;
+  display:flex;
+  /* grid-template-columns: 25% 25% 25% 25%; */
   justify-content: center;
   align-items: center;
   margin: 0;
   color: blue;
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 2.1rem;
   transition: 0.3s;
-
+}
+.social-contact .social-icon-contact2 i{
+  height: 46px;
+  width: 46px;
+  display:flex;
+  /* grid-template-columns: 25% 25% 25% 25%; */
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  color: #d00000;
+  text-decoration: none;
+  font-size: 2.1rem;
+  transition: 0.3s;
+}
+.social-contact .social-icon-contact3 i{
+  height: 46px;
+  width: 46px;
+  display:flex;
+  /* grid-template-columns: 25% 25% 25% 25%; */
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  color: #ef476f;
+  text-decoration: none;
+  font-size: 2.1rem;
+  transition: 0.3s;
 }
 .post .btn-primary{
   margin-bottom: 30px;
@@ -486,5 +517,11 @@ main .site-title .site-background{
   left:0;
   height: 50px
 }
-
+.social-contact{
+  display: grid;
+    grid-template-columns: 20% 20% 20%  40%;
+}
+.post-content h1{
+  padding-bottom: 30px !important;
+}
 }
