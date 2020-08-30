@@ -372,6 +372,8 @@ footer.footer-home .container{
 
 .footer-home .container .copyright h4{
   color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /* ............................Main..................................... */
@@ -512,10 +514,10 @@ main .site-title .site-background{
   margin-top: 0;
 }
 .footer-home{
-  position: relative;
+  /* position: absolute; */
   bottom: 0;
   left:0;
-  height: 40px
+  height: 50px
 }
 .social-contact{
   display: grid;

@@ -123,8 +123,10 @@ app.get("/home",function(req,res){
       console.log(req.user.name);
     }else{
       if(foundUsers){
-        
-        res.render("home",{startingContent: homeStartingContent, posts: foundUsers});
+        gotName = req.user.name;
+        console.log(gotName);
+
+        res.render("home",{startingContent: homeStartingContent, posts: foundUsers, yourName: req.user.name});
       }
     }
   })
@@ -217,11 +219,10 @@ app.post("/register",function(req,res){
 
   User.register({username: req.body.username},req.body.password, function(err,user){
     if(err){
-      console.log(err);
       res.redirect("/register");
     }else{
       passport.authenticate("local")(req,res,function(){
-        console.log(req.body.name);
+        // console.log(req.body.name);
         res.redirect("/home");
       });
     }
@@ -235,7 +236,8 @@ app.post("/login", function(req,res){
  });
  req.login(user, function(err){
    if(err){
-     console.log(err);
+      console.log(err);
+     // res.render("error")
    }else{
      passport.authenticate("local")(req,res,function(){
        res.redirect("/home");
@@ -244,13 +246,15 @@ app.post("/login", function(req,res){
  });
 });
 
+
+
 // -------------------------------------( Register & Login)---------------------------------------------------
 
 
 
-app.get("/register",function(req,res){
-  res.render("register");
-});
+// app.get("/register",function(req,res){
+//   res.render("register");
+// });
 
 // const sign_in_btn = document.getElementById("sign-in-btn");
 // const sign_up_btn = document.getElementById("sign-up-btn");
