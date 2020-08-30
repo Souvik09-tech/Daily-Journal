@@ -512,10 +512,10 @@ main .site-title .site-background{
   margin-top: 0;
 }
 .footer-home{
-  position: fixed;
+  position: relative;
   bottom: 0;
   left:0;
-  height: 50px
+  height: 40px
 }
 .social-contact{
   display: grid;
