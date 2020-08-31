@@ -54,14 +54,7 @@ button.btn{
   min-height: 100%;
 }
 
-/* .trials-sp{
-  background-image: url("/images/Asset 2.png");
-  background-size: 300% 130%;
-  background-blend-mode: darken;
-  background-repeat: no-repeat;
-
-} */
-/* ..........................Navigation............................ */
+..........................Navigation............................ */
 .nav{
   padding:0 2rem;
   height: 0;
@@ -186,6 +179,7 @@ main .abt-site-title .btn{
   margin: 1.6rem;
   background-color:#ffffff;
   font-family: 'DM Serif Display', serif;
+  outline: none;
 }
 
 main .site-title .btn:hover{
@@ -208,13 +202,6 @@ main .site-title .btn:hover{
   width: 100%;
 }
 
-/* .blogpost{
-  background-image: url("/images/blog.svg");
-  background-repeat: no-repeat;
-  background-position: right;
-  /* height: 10%; */
-  /* width: 10%;
-}  */
 
 .site-content{
   display: grid;
@@ -310,7 +297,6 @@ hr{
   height: 46px;
   width: 46px;
   display:flex;
-  /* grid-template-columns: 25% 25% 25% 25%; */
   justify-content: center;
   align-items: center;
   margin: 0;
@@ -323,7 +309,6 @@ hr{
   height: 46px;
   width: 46px;
   display:flex;
-  /* grid-template-columns: 25% 25% 25% 25%; */
   justify-content: center;
   align-items: center;
   margin: 0;
@@ -427,13 +412,7 @@ footer.footer-home .container{
 
 
   }
-  /* .trials{
-    background-image: url("/images/Asset 2.png");
-    background-size: cover;
-    background-blend-mode: darken;
-    background-repeat: no-repeat;
 
-  } */
 
 main .site-title h1{
   font-size: 170%;
